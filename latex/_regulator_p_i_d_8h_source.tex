@@ -1,0 +1,46 @@
+\doxysection{Regulator\+PID.\+h}
+\hypertarget{_regulator_p_i_d_8h_source}{}\label{_regulator_p_i_d_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ REGULATORPID\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ REGULATORPID\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}ObiektSISO.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }RegulatorPID\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_obiekt_s_i_s_o}{ObiektSISO}}}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{double}\ k;\ \ \textcolor{comment}{//\ Wzmocnienie\ proporcjonalne}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{double}\ Ti;\ \textcolor{comment}{//\ Czas\ całkowania}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{double}\ Td;\ \textcolor{comment}{//\ Czas\ różniczkowania}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{double}\ sumaUchybow;\ \ \ \ \textcolor{comment}{//\ Pamięć\ części\ całkującej}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{double}\ poprzedniUchyb;\ \textcolor{comment}{//\ Pamięć\ części\ różniczkującej}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ czyPI;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ czyPID;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ sprawdzDodatnie(\textcolor{keywordtype}{double}\ wartosc,\ \textcolor{keyword}{const}\ std::string\ \&nazwa);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Konstruktor\ regulatora\ P}}
+\DoxyCodeLine{00024\ \ \ \ \ RegulatorPID(\textcolor{keywordtype}{double}\ k);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ Konstruktor\ regulatora\ PI}}
+\DoxyCodeLine{00027\ \ \ \ \ RegulatorPID(\textcolor{keywordtype}{double}\ k,\ \textcolor{keywordtype}{double}\ Ti);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ Konstruktor\ regulatora\ PID}}
+\DoxyCodeLine{00030\ \ \ \ \ RegulatorPID(\textcolor{keywordtype}{double}\ k,\ \textcolor{keywordtype}{double}\ Ti,\ \textcolor{keywordtype}{double}\ Td);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ Settery}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ setK(\textcolor{keywordtype}{double}\ k);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ setTi(\textcolor{keywordtype}{double}\ Ti);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ setTd(\textcolor{keywordtype}{double}\ Td);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ Symulacja}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{double}\ symuluj(\textcolor{keywordtype}{double}\ uchyb)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ REGULATORPID\_H}}
+
+\end{DoxyCode}
