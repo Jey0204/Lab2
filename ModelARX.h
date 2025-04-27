@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #ifndef MODEL_ARX_H
 #define MODEL_ARX_H
 
@@ -41,7 +41,6 @@ private:
 };
 
 #endif
-=======
 #ifndef MODEL_ARX_H
 #define MODEL_ARX_H
 
@@ -78,4 +77,3 @@ private:
 };
 
 #endif
->>>>>>> feca6fd1140f62900434cbb66b09f38aa80035a2

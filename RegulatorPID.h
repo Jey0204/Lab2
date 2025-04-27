@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #ifndef REGULATORPID_H
 #define REGULATORPID_H
 
@@ -45,7 +45,7 @@ public:
 };
 
 #endif // REGULATORPID_H
-=======
+
 #ifndef REGULATORPID_H
 #define REGULATORPID_H
 
@@ -87,4 +87,3 @@ public:
 };
 
 #endif // REGULATORPID_H
->>>>>>> feca6fd1140f62900434cbb66b09f38aa80035a2
