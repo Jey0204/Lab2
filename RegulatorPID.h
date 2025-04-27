@@ -4,6 +4,11 @@
 
 #include <string>
 #include "ObiektSISO.h"
+/**
+ * @author Jessica Adamczyk
+ * @class RegulatorPID
+ * @brief Klasa implementująca regulator PID.
+ */
 
 class RegulatorPID : public ObiektSISO
 {

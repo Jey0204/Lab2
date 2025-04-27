@@ -7,6 +7,12 @@
 #include <deque>
 #include <random>
 
+/**
+ * @author Jessica Adamczyk
+ * @class ModelARX
+ * @brief Implementacja dyskretnego modelu ARX
+ */
+
 class ModelARX : public ObiektSISO
 {
 public:
